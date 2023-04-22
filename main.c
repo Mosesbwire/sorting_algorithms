@@ -18,5 +18,9 @@ int main(void)
 	bubble_sort(array, n);
 	printf("\n");
 	print_array(array, n);
+
+	printf("sorted array\n");
+
+	bubble_sort(array, n);
 	return (0);
 }
