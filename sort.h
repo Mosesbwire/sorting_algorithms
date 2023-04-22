@@ -2,20 +2,21 @@
 #define SORT_H
 #include <stddef.h>
 
+
 /**
  * struct listint_s - doubly linked list
- *
- * @n: Integer stored in the node
- * @prev: Pointer to previous element of the list
- * @next: Pointer to next element of the list
+ * @n: INteger in node;
+ * @prev: pointer to previous element in list
+ * @next: pointer to next element in list
  */
 
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+   const int n;
+   struct listint_s *prev;
+   struct listint_s *next;
 } listint_t;
+
 
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
